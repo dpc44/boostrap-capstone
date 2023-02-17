@@ -8,10 +8,15 @@
 }
 
 .container{
-    /* border: 1px solid red;     */
+    border: 1px solid red;    
 }
 
-
+.h1-title{
+    font-size: 15px;
+    font-weight: 700;
+    color: #dc4f72;
+    text-transform: capitalize;
+}
 /* header */
 
 
@@ -153,3 +158,30 @@
 
     transition: all 0.5s;
 }
+
+
+/* services */
+
+.services .container .service-title{
+    
+    padding: 10px 190px;
+}
+
+
+.services .service-list .service-item{
+    background-color: #f7f9fc;
+    box-shadow:transparent;
+    overflow: hidden;
+    
+    transition: all 0.5s;
+}
+
+.services .service-list .service-item:hover{
+    background-color: #fff;
+    box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+    transform: translateY(-20px);
+    transition: all 0.5s;
+}
+
+
+
