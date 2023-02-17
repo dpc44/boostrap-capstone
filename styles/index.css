@@ -7,8 +7,14 @@
 
 }
 
+.container{
+    /* border: 1px solid red;     */
+}
+
 
 /* header */
+
+
 .header .logo {
     color: #dc4f72;
     text-decoration: none;
@@ -73,7 +79,56 @@
     transition: all 0.5s;
 }
 
+/* carousel */
+
+.carousel-section{
+    margin-top: 100px;
+    background-image: url(../images/carousel-BG.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 500px;
+    background-attachment: fixed;
+
+    
+}
+
+
+.carousel-section .custom-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgba(255,255, 255, 0.95);
+    min-height: 500px;
+}
+
+
+.carousel-section .container .carousel-img img{
+    transform: rotate(180deg);
+}
+
+
+.carousel-section .container .row{
+
+    padding-top: 100px;
+}
 
 
 
 
+.carousel-section .container .button-deco{
+    border: 1px solid #dc4f72;
+    color: #dc4f72;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+
+.carousel-section .container .button-deco:hover{
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #dc4f72 !important;
+
+    transition: all 0.5s;
+}
