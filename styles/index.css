@@ -260,15 +260,106 @@
 }
 
 
+/* faq */
+
+.faq .accordion .accordion-button:not(.collapsed) {
+    border: transparent !important;
+    background-color: transparent !important;
+    color: #000;
+}
+
+.accordion-button::after {
+    background-image: none;
+    width: 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    width: 0;
+}
+
+.faq .accordion .accordion-button:focus {
+    box-shadow: inherit;
+}
+
+.faq .accordion .accordion-button {
+    position: relative;
+}
+
+.faq .accordion .accordion-item .custom-arrow::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 9px;
+    right: 31px;
+    transform: rotate(320deg);
+}
+
+.faq .accordion .accordion-item .custom-arrow::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 9px;
+    right: 27px;
+    transform: rotate(30deg);
+}
+
+.faq .accordion .accordion-item .accordion-button:not(.collapsed):before {
+    transform: translate(4px, 0) rotate(320deg);
+    transition: all 0.5s;
+}
 
 
+.faq .accordion .accordion-item .accordion-button:not(.collapsed):after {
+    transform: translate(-4px, 0) rotate(-320deg);
+    transition: all 0.5s;
+}
 
 
+.faq .accordion .accordion-item .accordion-header {
+    border-bottom: transparent;
+}
+
+.faq .accordion .faq-img img{
+    position: sticky;
+    top: 120px;
+    transition: all 0.5s;
+}
+
+.faq .accordion .faq-img img:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s;
+}
 
 
+.faq .accordion .accordion-body{
+    overflow: hidden;
+}
 
+.faq .accordion .accordion-body p{
+    opacity: 0;
+    animation: goup 1s;
+    
+    animation-fill-mode: both;
+}
 
+.faq .faq-title{
+    padding: 10px 190px;
+}
 
+@keyframes goup {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 /* CSS + dark theme (này để cuối) */
 
 #switchButton {
@@ -296,17 +387,18 @@
     display: none;
 }
 
+
 /* Dark Header */
-.dark .header{
+.dark .header {
     background-color: black !important;
 }
 
-.dark .header .menu a{
+.dark .header .menu a {
     color: #fff !important;
     transition: all 0.5s;
 }
 
-.dark .header .menu a:hover{
+.dark .header .menu a:hover {
     color: #dc4f72 !important;
     transition: all 0.5s;
 }
@@ -342,28 +434,42 @@
     min-height: 500px;
 }
 
-.dark .carousel-section .carousel-title{
-    color: #fff !important;
+.dark .carousel-section .carousel-title {
+    background-attachment: fixed;
 }
 
 
 /* Dark Services */
 
-.dark .services{
+.dark .services {
     background-color: black;
 }
 
-.dark .services .service-title{
+.dark .services .service-title {
     color: #fff !important;
 }
 
 /* dark solutions */
 
-.dark .solutions{
+.dark .solutions {
     background-color: #000;
 }
 
 
-.solutions .solutions-title{
+.dark .solutions .solutions-title {
     color: #fff !important;
+}
+
+/* dark faq */
+
+.dark .faq {
+    background-color: #000 !important;
+}
+
+.dark .faq .faq-title {
+    color: #fff !important;
+}
+
+.dark .accordion-item , .dark .accordion-button{
+    background-color: #b3aeae !important;
 }
