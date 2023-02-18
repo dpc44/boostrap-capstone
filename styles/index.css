@@ -200,17 +200,17 @@
     color: #dc4f72;
 }
 
-.solutions .p-solutions-2{
+.solutions .p-solutions-2 {
     background-color: #cce6cc;
     color: #6a8000;
 }
 
-.solutions .p-solutions-3{
+.solutions .p-solutions-3 {
     background-color: #ccccff;
     color: #7d4eff;
 }
 
-.solutions .container .card-list .card-item .card-header img{
+.solutions .container .card-list .card-item .card-header img {
     filter: grayscale(100%);
 }
 
@@ -219,7 +219,7 @@
     position: relative;
 }
 
-.solutions .container .card-list .card-item .card-header p{
+.solutions .container .card-list .card-item .card-header p {
     position: absolute;
     background-color: #dc4f72;
     width: 35%;
@@ -229,32 +229,141 @@
 
 }
 
-.solutions .container .card-list .card-item .card-footer a{
+.solutions .container .card-list .card-item .card-footer a {
     font-size: 12px;
     color: #dc4f72;
 }
 
-.solutions .container .card-list .card-item{
+.solutions .container .card-list .card-item {
     transition: all 0.5s;
 }
 
-.solutions .container .card-list .card-item:hover{
+.solutions .container .card-list .card-item:hover {
     box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
     transform: translateY(-20px);
     transition: all 0.5s;
 }
 
-.solutions .container .card-list .card-item:hover img{
+.solutions .container .card-list .card-item:hover img {
     filter: grayscale(0%);
     transition: all 0.5s;
 }
 
-.solutions .container .card-list .card-item:hover .footer-i{
+.solutions .container .card-list .card-item:hover .footer-i {
     transform: translateX(5px);
     transition: all 0.5s;
 }
 
-.solutions .container .card-list .card-item:hover .body-a{
+.solutions .container .card-list .card-item:hover .body-a {
     color: #dc4f72 !important;
     transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CSS + dark theme (này để cuối) */
+
+#switchButton {
+    background-color: white;
+}
+
+#switchButton .fa-sun {
+    display: none;
+}
+
+#switchButton .fa-moon {
+    display: block;
+}
+
+.dark #switchButton {
+    background-color: black;
+}
+
+.dark #switchButton .fa-sun {
+    display: block;
+    color: white;
+}
+
+.dark #switchButton .fa-moon {
+    display: none;
+}
+
+/* Dark Header */
+.dark .header{
+    background-color: black !important;
+}
+
+.dark .header .menu a{
+    color: #fff !important;
+    transition: all 0.5s;
+}
+
+.dark .header .menu a:hover{
+    color: #dc4f72 !important;
+    transition: all 0.5s;
+}
+
+.dark .dropdown-menu {
+
+    background-color: black !important;
+    border: 1px solid #fff;
+
+}
+
+.dark .header .container .menu .dropdown-menu::before {
+    position: absolute;
+    content: '';
+    background: #000;
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(-50%) rotateZ(45deg);
+    width: 20px;
+    height: 20px;
+    top: -11px;
+    left: 50%;
+}
+
+/* dark carousel */
+.dark .carousel-section .custom-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    min-height: 500px;
+}
+
+.dark .carousel-section .carousel-title{
+    color: #fff !important;
+}
+
+
+/* Dark Services */
+
+.dark .services{
+    background-color: black;
+}
+
+.dark .services .service-title{
+    color: #fff !important;
+}
+
+/* dark solutions */
+
+.dark .solutions{
+    background-color: #000;
+}
+
+
+.solutions .solutions-title{
+    color: #fff !important;
 }

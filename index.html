@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 
-<body>
+<body id="myBody">
     <!-- header (Phat)-->
     <header class="header bg-white shadow fixed-top nav-fixed">
         <div class="container">
@@ -34,6 +34,10 @@
                 </a>
 
                 <div class="menu">
+                    <button class="btn" id="switchButton" title="Click to switch theme">
+                        <i class="far fa-moon"></i>
+                        <i class="far fa-sun"></i>
+                    </button>
                     <a href="#" class="mx-3 text-dark active-link">Home</a>
                     <a href="#" class="mx-3 text-dark">About</a>
                     <a href="#" class="mx-3 text-dark">Services</a>
@@ -155,57 +159,66 @@
             <div class="card-list">
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-12">
-                        <div class="card-item border rounded-top-3">
+                        <div class="card-item border rounded-top-3 bg-light">
                             <div class="card-header">
                                 <img src="./images/solution-1.jpg" alt="solution1" class="w-100 rounded-top-3">
                                 <p class="px-4 py-3 text-white">26 Jan, 2020</p>
                             </div>
                             <div class="card-body text-left border-bottom mx-4 mt-5">
                                 <p class="p-solutions-1 py-1 text-center w-25 rounded-4  ">Business</p>
-                                <a href="#" class="fs-4 text-decoration-none text-dark fw-bold my-4  d-block body-a " > Corporate, Business & Digital Agency </a>
-                                <p class="text-secondary mb-4 fs-6">Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas
+                                <a href="#" class="fs-4 text-decoration-none text-dark fw-bold my-4  d-block body-a ">
+                                    Corporate, Business & Digital Agency </a>
+                                <p class="text-secondary mb-4 fs-6">Lorem ipsum dolor sit amet nostrum ad minus libero
+                                    fugiat molestiae ullam ipsam quas
                                     unde earum...</p>
                             </div>
                             <div class="card-footer text-left mx-4 my-3">
-                                <a href="#" class="text-decoration-none ">Know More <i class="fa fa-arrow-right footer-i"></i></a>
+                                <a href="#" class="text-decoration-none ">Know More <i
+                                        class="fa fa-arrow-right footer-i"></i></a>
                             </div>
 
                         </div>
                     </div>
 
                     <div class="col-md-4 col-sm-4 col-12">
-                        <div class="card-item border rounded-top-3">
+                        <div class="card-item border rounded-top-3 bg-light">
                             <div class="card-header">
                                 <img src="./images/solution-2.jpg" alt="solution2" class="w-100 rounded-top-3">
                                 <p class="px-4 py-3 text-white">15 Apr, 2020</p>
                             </div>
                             <div class="card-body text-left border-bottom mx-4 mt-5">
                                 <p class="p-solutions-2 py-1 text-center w-25 rounded-4  ">Design</p>
-                                <a href="#" class="fs-4 text-decoration-none text-dark fw-bold my-4  d-block body-a "> Corporate, Business & Digital Agency </a>
-                                <p class="text-secondary mb-4 fs-6">Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas
+                                <a href="#" class="fs-4 text-decoration-none text-dark fw-bold my-4  d-block body-a ">
+                                    Corporate, Business & Digital Agency </a>
+                                <p class="text-secondary mb-4 fs-6">Lorem ipsum dolor sit amet nostrum ad minus libero
+                                    fugiat molestiae ullam ipsam quas
                                     unde earum...</p>
                             </div>
                             <div class="card-footer text-left mx-4 my-3">
-                                <a href="#" class="text-decoration-none ">Know More <i class="fa fa-arrow-right footer-i"></i></a>
+                                <a href="#" class="text-decoration-none ">Know More <i
+                                        class="fa fa-arrow-right footer-i"></i></a>
                             </div>
 
                         </div>
                     </div>
 
                     <div class="col-md-4 col-sm-4 col-12">
-                        <div class="card-item border rounded-top-3">
+                        <div class="card-item border rounded-top-3 bg-light">
                             <div class="card-header">
                                 <img src="./images/solution-3.jpg" alt="solution3" class="w-100 rounded-top-3">
                                 <p class="px-4 py-3 text-white">25 Jun, 2020</p>
                             </div>
                             <div class="card-body text-left border-bottom mx-4 mt-5">
                                 <p class="p-solutions-3 py-1 text-center w-25 rounded-4  ">Industry</p>
-                                <a href="#" class="fs-4 text-decoration-none text-dark fw-bold my-4  d-block body-a "> Corporate, Business & Digital Agency </a>
-                                <p class="text-secondary mb-4 fs-6">Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas
+                                <a href="#" class="fs-4 text-decoration-none text-dark fw-bold my-4  d-block body-a ">
+                                    Corporate, Business & Digital Agency </a>
+                                <p class="text-secondary mb-4 fs-6">Lorem ipsum dolor sit amet nostrum ad minus libero
+                                    fugiat molestiae ullam ipsam quas
                                     unde earum...</p>
                             </div>
                             <div class="card-footer text-left mx-4 my-3">
-                                <a href="#" class="text-decoration-none ">Know More <i class="fa fa-arrow-right footer-i"></i></a>
+                                <a href="#" class="text-decoration-none ">Know More <i
+                                        class="fa fa-arrow-right footer-i"></i></a>
                             </div>
 
                         </div>
@@ -223,7 +236,12 @@
 
 
 
-
+    <!-- Dark/light js -->
+    <script>
+        document.getElementById("switchButton").onclick = function () {
+            document.getElementById("myBody").classList.toggle("dark");
+        }
+    </script>
 </body>
 
 </html>
