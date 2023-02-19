@@ -8,7 +8,7 @@
 }
 
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .h1-title {
@@ -360,6 +360,55 @@
         transform: translateY(0px);
     }
 }
+
+/* footer */
+
+.footer .footer-item li a{
+    transition: all 0.5s;
+}
+.footer .footer-item li a:hover{
+    color: #dc4f72 !important;
+    transition: all 0.5s;
+}
+
+.footer .newspaper .button-deco {
+    
+    background-color: #dc4f72 !important;
+}
+
+.footer .footer-icon .right p{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* CSS + dark theme (này để cuối) */
 
 #switchButton {
@@ -438,7 +487,13 @@
     background-attachment: fixed;
 }
 
+.dark .carousel-section .carousel-title {
+    color: #fff !important;
+}
 
+.dark .carousel-section .carousel-title p {
+    color: #fff !important;
+}
 /* Dark Services */
 
 .dark .services {
@@ -449,6 +504,9 @@
     color: #fff !important;
 }
 
+.dark .services .service-list .service-item{
+    background-color: #b3aeae;
+}
 /* dark solutions */
 
 .dark .solutions {
@@ -460,6 +518,20 @@
     color: #fff !important;
 }
 
+
+.dark .solutions .card-list .card-item{
+    background-color: #b3aeae !important;
+    /* border: transparent !important; */
+}
+
+.dark .solutions .card-list .card-item .card-body p:not(:first-child){
+    color: #000 !important;
+}
+
+/* .dark .solutions .card-list .card-item .card-footer{
+    
+    padding-bottom: 10px;
+} */
 /* dark faq */
 
 .dark .faq {
@@ -473,3 +545,76 @@
 .dark .accordion-item , .dark .accordion-button{
     background-color: #b3aeae !important;
 }
+
+
+/* dark footer */
+
+.dark .footer {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.dark .newspaper .table-news{
+    background-color: #b3aeae !important;
+}
+
+.dark .footer .footer-icon a{
+    color: #fff !important;
+}
+
+
+
+
+/* Reponsive */
+
+@media only screen and (max-width:768px){
+    
+    
+
+    .header .menu{
+        width: 100%;
+    }
+    .header .menu .button-deco{
+        font-size: 12px !important;
+        padding: 2px !important;
+    }
+    .header .menu a{
+        margin-left: 2px !important;
+        font-size: 12px;
+    }
+    
+    .carousel-section .container .carousel-title{
+        text-align: center !important;
+    }
+
+    
+
+    .services .container .service-title {
+        padding: 50px 0;
+    }
+
+
+    .services .container .service-list .service-item {
+        margin-bottom: 50px;
+    }
+
+    .solutions .container .solutions-title {
+        padding: 50px 0;
+    }
+
+    .solutions .container .card-list .card-item{
+        margin-bottom: 50px;
+    }
+    
+    .faq .container .faq-title {
+        padding: 50px 0;
+    }
+
+    .footer .footer-icon .left i{
+        font-size: 12px;
+    }
+
+    .footer .footer-icon .right p{
+        font-size: 10px;
+    }
+}
+
