@@ -7,9 +7,7 @@
 
 }
 
-.container {
-    /* border: 1px solid red; */
-}
+
 
 .h1-title {
     font-size: 15px;
@@ -108,7 +106,29 @@
     left: 50%;
 }
 
+.header .navbar-toggler{
+    background-color: #dc4f72 !important;
+    
+}
 
+.header .navbar-toggler:focus .fa-bars{
+    display: none;
+}
+
+.header .navbar-toggler:focus .fa-times{
+    display: block;
+    color: #fff !important;
+}
+
+
+.header .navbar-toggler .fa-times{
+    display: none;
+}
+
+.header .navbar-toggler .fa-bars{
+    display: block;
+    color: #fff !important;
+}
 
 /* Navbar - header */
 
@@ -578,6 +598,9 @@
 
 
 /* Reponsive */
+
+
+
 
 @media only screen and (max-width:768px) {
 
