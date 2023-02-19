@@ -30,14 +30,14 @@
     text-decoration: none;
 }
 
-.header .menu a {
+.header  a {
     text-decoration: none;
     position: relative;
     transition: all 0.5s;
 }
 
 
-.header .menu a:hover {
+.header  a:hover {
 
     color: #dc4f72 !important;
     transition: color 0.5s;
@@ -47,18 +47,18 @@
     color: #dc4f72 !important;
 }
 
-.header .menu a::after {
+.header  a:not(.button-deco)::after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: 5px;
     left: 0;
     height: 3px;
     width: 0%;
     background-color: #dc4f72;
 }
 
-.header .menu a:hover::after {
-    width: 50%;
+.header  a:hover::after {
+    width: 35px;
     transition: width 0.5s;
 }
 
@@ -69,7 +69,7 @@
 }
 
 
-.header .menu .button-deco {
+.header  .button-deco {
     border: 1px solid #dc4f72;
     color: #dc4f72;
     font-size: 15px;
@@ -78,23 +78,23 @@
 }
 
 
-.header .menu .button-deco:hover {
+.header  .button-deco:hover {
     border: 1px solid transparent;
-    color: #fff;
+    color: #fff !important;
     background-color: #dc4f72 !important;
 
     transition: all 0.5s;
 }
 
 
-.header .container .menu .dropdown-menu {
-    left: -45px !important;
-    top: 20px !important;
+.header .container  .dropdown-menu {
+    left: -40px !important;
+    top:40px !important;
 }
 
 
 
-.header .container .menu .dropdown-menu::before {
+.header .container  .dropdown-menu::before {
     position: absolute;
     content: '';
     background: #fff;
@@ -107,6 +107,11 @@
     top: -11px;
     left: 50%;
 }
+
+
+
+/* Navbar - header */
+
 
 /* carousel */
 
@@ -322,30 +327,30 @@
     border-bottom: transparent;
 }
 
-.faq .accordion .faq-img img{
+.faq .accordion .faq-img img {
     position: sticky;
     top: 120px;
     transition: all 0.5s;
 }
 
-.faq .accordion .faq-img img:hover{
+.faq .accordion .faq-img img:hover {
     transform: translateY(-10px);
     transition: all 0.5s;
 }
 
 
-.faq .accordion .accordion-body{
+.faq .accordion .accordion-body {
     overflow: hidden;
 }
 
-.faq .accordion .accordion-body p{
+.faq .accordion .accordion-body p {
     opacity: 0;
     animation: goup 1s;
-    
+
     animation-fill-mode: both;
 }
 
-.faq .faq-title{
+.faq .faq-title {
     padding: 10px 190px;
 }
 
@@ -363,20 +368,21 @@
 
 /* footer */
 
-.footer .footer-item li a{
+.footer .footer-item li a {
     transition: all 0.5s;
 }
-.footer .footer-item li a:hover{
+
+.footer .footer-item li a:hover {
     color: #dc4f72 !important;
     transition: all 0.5s;
 }
 
 .footer .newspaper .button-deco {
-    
+
     background-color: #dc4f72 !important;
 }
 
-.footer .footer-icon .right p{
+.footer .footer-icon .right p {
     margin-top: 10px;
 }
 
@@ -438,16 +444,16 @@
 
 
 /* Dark Header */
-.dark .header {
+.dark .header .navbar {
     background-color: black !important;
 }
 
-.dark .header .menu a {
+.dark .header .navbar a:not(.button-deco) {
     color: #fff !important;
     transition: all 0.5s;
 }
 
-.dark .header .menu a:hover {
+.dark .header  a:hover {
     color: #dc4f72 !important;
     transition: all 0.5s;
 }
@@ -458,8 +464,11 @@
     border: 1px solid #fff;
 
 }
-
-.dark .header .container .menu .dropdown-menu::before {
+.dark .header .button-deco:hover{
+    color: #fff !important;
+    transition: all 0.5s;
+}
+.dark .header .container  .dropdown-menu::before {
     position: absolute;
     content: '';
     background: #000;
@@ -494,6 +503,7 @@
 .dark .carousel-section .carousel-title p {
     color: #fff !important;
 }
+
 /* Dark Services */
 
 .dark .services {
@@ -504,9 +514,10 @@
     color: #fff !important;
 }
 
-.dark .services .service-list .service-item{
+.dark .services .service-list .service-item {
     background-color: #b3aeae;
 }
+
 /* dark solutions */
 
 .dark .solutions {
@@ -519,12 +530,12 @@
 }
 
 
-.dark .solutions .card-list .card-item{
+.dark .solutions .card-list .card-item {
     background-color: #b3aeae !important;
     /* border: transparent !important; */
 }
 
-.dark .solutions .card-list .card-item .card-body p:not(:first-child){
+.dark .solutions .card-list .card-item .card-body p:not(:first-child) {
     color: #000 !important;
 }
 
@@ -542,7 +553,8 @@
     color: #fff !important;
 }
 
-.dark .accordion-item , .dark .accordion-button{
+.dark .accordion-item,
+.dark .accordion-button {
     background-color: #b3aeae !important;
 }
 
@@ -553,11 +565,12 @@
     background-color: #000 !important;
     color: #fff !important;
 }
-.dark .newspaper .table-news{
+
+.dark .newspaper .table-news {
     background-color: #b3aeae !important;
 }
 
-.dark .footer .footer-icon a{
+.dark .footer .footer-icon a {
     color: #fff !important;
 }
 
@@ -566,28 +579,80 @@
 
 /* Reponsive */
 
-@media only screen and (max-width:768px){
-    
-    
+@media only screen and (max-width:768px) {
 
-    .header .menu{
-        width: 100%;
+
+    .header .container  .dropdown-menu::before {
+        position: absolute;
+        content: '';
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-right: none;
+        border-bottom: none;
+        transform: translateX(-50%) rotateZ(45deg);
+        width: 20px;
+        height: 20px;
+        top: 32px;
+        left: 50%;
     }
-    .header .menu .button-deco{
-        font-size: 12px !important;
-        padding: 2px !important;
-    }
-    .header .menu a{
-        margin-left: 2px !important;
-        font-size: 12px;
-    }
+
     
-    .carousel-section .container .carousel-title{
+    .header  a:not(.button-deco)::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 200px;
+        height: 3px;
+        width: 0%;
+        text-align: center;
+        background-color: #dc4f72;
+    }
+    .header .container .dropdown-menu {
+        
+        width: 50%;
+        margin-left: 115px;
+    }
+    .header .container .dropdown-menu a:after {
+        top: 25px;
+        left: 34px;
+        
+        
+    }
+    .header  a:hover::after {
+        width: 35px;
+        transition: width 0.5s;
+    }
+
+    .header .container .dropdown-menu a:hover::after {
+        width: 45px;
+        transition: width 0.5s;
+    }
+
+    .dark .header .container .dropdown-menu::before {
+        position: absolute;
+        content: '';
+        background: #000;
+        border: 1px solid white;
+        border-right: none;
+        border-bottom: none;
+        transform: translateX(-50%) rotateZ(45deg);
+        width: 20px;
+        height: 20px;
+        top: 33px;
+        left: 50%;
+    }
+
+
+    .carousel-section .container .carousel-title {
         text-align: center !important;
     }
 
-    
 
+    .header  .button-deco{
+        transform: translateX(100px);
+        width: 50%;
+        display: block;
+    }
     .services .container .service-title {
         padding: 50px 0;
     }
@@ -601,20 +666,20 @@
         padding: 50px 0;
     }
 
-    .solutions .container .card-list .card-item{
+    .solutions .container .card-list .card-item {
         margin-bottom: 50px;
     }
-    
+
     .faq .container .faq-title {
         padding: 50px 0;
     }
 
-    .footer .footer-icon .left i{
+    .footer .footer-icon .left i {
         font-size: 12px;
     }
 
-    .footer .footer-icon .right p{
+    .footer .footer-icon .right p {
+
         font-size: 10px;
     }
 }
-
