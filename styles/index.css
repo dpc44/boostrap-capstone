@@ -247,7 +247,7 @@
 .solutions .container .card-list .card-item .card-header p {
     position: absolute;
     background-color: #dc4f72;
-    width: 35%;
+    width: 40%;
     border-top-right-radius: 0.5rem;
     top: 0;
     right: 0;
@@ -348,6 +348,7 @@
 }
 
 .faq .accordion .faq-img img {
+    /* border: 1px solid #333; */
     position: sticky;
     top: 120px;
     transition: all 0.5s;
@@ -398,7 +399,7 @@
 }
 
 .footer .newspaper .button-deco {
-
+    width: 22%;
     background-color: #dc4f72 !important;
 }
 
@@ -666,9 +667,6 @@
     }
 
 
-    .carousel-section .container .carousel-title {
-        text-align: center !important;
-    }
 
 
     .header  .button-deco{
