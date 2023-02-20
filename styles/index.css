@@ -407,7 +407,27 @@
     margin-top: 10px;
 }
 
+/* back-to-top */
+ .backToTop {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f55f8d;
+    border-radius: 8px;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: #fff;
+    transition: all .3s;
 
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cd-top--is-visible {
+    visibility: visible !important;
+    opacity: 1;
+} 
 
 
 
