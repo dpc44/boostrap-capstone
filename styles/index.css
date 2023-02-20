@@ -625,6 +625,111 @@
         content: '';
         position: absolute;
         bottom: 5px;
+        left: 290px;
+        height: 3px;
+        width: 0%;
+        text-align: center;
+        background-color: #dc4f72;
+    }
+    .header .container .dropdown-menu {
+        
+        width: 50%;
+        margin-left: 170px;
+    }
+    .header .container .dropdown-menu a:after {
+        top: 25px;
+        left: 65px;
+        
+        
+    }
+    .header  a:hover::after {
+        width: 35px;
+        transition: width 0.5s;
+    }
+
+    .header .container .dropdown-menu a:hover::after {
+        width: 45px;
+        transition: width 0.5s;
+    }
+
+    .dark .header .container .dropdown-menu::before {
+        position: absolute;
+        content: '';
+        background: #000;
+        border: 1px solid white;
+        border-right: none;
+        border-bottom: none;
+        transform: translateX(-50%) rotateZ(45deg);
+        width: 20px;
+        height: 20px;
+        top: 33px;
+        left: 50%;
+    }
+
+
+
+
+    .header  .button-deco{
+        transform: translateX(220px);
+        width: 30%;
+        display: block;
+    }
+    .services .container .service-title {
+        padding: 50px 0;
+    }
+
+
+    .services .container .service-list .service-item {
+        margin-bottom: 50px;
+    }
+
+    .solutions .container .solutions-title {
+        padding: 50px 0;
+    }
+
+    .solutions .container .card-list .card-item {
+        margin-bottom: 50px;
+    }
+
+    .faq .container .faq-title {
+        padding: 50px 0;
+    }
+
+    .footer .footer-icon .left i {
+        font-size: 12px;
+    }
+
+    .footer .footer-icon .right p {
+
+        font-size: 10px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:560px) {
+
+
+    .header .container  .dropdown-menu::before {
+        position: absolute;
+        content: '';
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-right: none;
+        border-bottom: none;
+        transform: translateX(-50%) rotateZ(45deg);
+        width: 20px;
+        height: 20px;
+        top: 32px;
+        left: 50%;
+    }
+
+    
+    .header  a:not(.button-deco)::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
         left: 200px;
         height: 3px;
         width: 0%;
@@ -670,37 +775,8 @@
 
 
     .header  .button-deco{
-        transform: translateX(100px);
-        width: 50%;
+        transform: translateX(130px);
+        width: 40%;
         display: block;
-    }
-    .services .container .service-title {
-        padding: 50px 0;
-    }
-
-
-    .services .container .service-list .service-item {
-        margin-bottom: 50px;
-    }
-
-    .solutions .container .solutions-title {
-        padding: 50px 0;
-    }
-
-    .solutions .container .card-list .card-item {
-        margin-bottom: 50px;
-    }
-
-    .faq .container .faq-title {
-        padding: 50px 0;
-    }
-
-    .footer .footer-icon .left i {
-        font-size: 12px;
-    }
-
-    .footer .footer-icon .right p {
-
-        font-size: 10px;
     }
 }
