@@ -172,3 +172,31 @@ Math.easeInOutQuad = function (t, b, c, d) {
 	t--;
 	return -c/2 * (t*(t-2) - 1) + b;
 };
+
+// define custom function for Element
+HTMLElement.prototype.get = function (el) {
+  return this.querySelector(el);
+}
+Document.prototype.get = HTMLElement.prototype.get;
+
+HTMLElement.prototype.getAll = function (el) {
+  return this.querySelectorAll(el);
+}
+Document.prototype.getAll = HTMLElement.prototype.getAll;
+
+HTMLElement.prototype.on = function (event, callback) {
+  return this.addEventListener(event, callback);
+}
+Document.prototype.on = HTMLElement.prototype.on;
+
+HTMLElement.prototype.addClass = function (newClass) {
+  return this.classList.add(newClass);
+}
+
+HTMLElement.prototype.removeClass = function (cls) {
+  return this.classList.remove(cls);
+}
+
+HTMLElement.prototype.attr = function (name) {
+  return this.getAttribute(name);
+}
