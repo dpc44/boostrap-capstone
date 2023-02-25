@@ -800,3 +800,129 @@
         display: block;
     }
 }
+
+/* UYen */
+.btn-outline-danger {
+    color: #dc4f72;
+    border-color: #dc4f72;
+    transition: 0.3s ease-out;
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+}
+
+.btn-danger {
+    transition: 0.3s ease-out;
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+.fw-boldest {
+    font-weight: 900 !important;
+}
+
+.about-our-company .btn-danger {
+    transition: 0.3s ease-out;
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+.about-stat .about-stat-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+    transition: 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.about-stat .about-stat-box .stat-counter {
+    font-size: 50px;
+    line-height: 1;
+    color: #dc4f72;
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.about-stat .about-stat-box:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
+
+.featured .nav-tabs {
+    display: flex;
+    border: none;
+}
+
+.featured .nav-tabs .nav-item {
+    width: 33.33%;
+}
+
+.featured .nav-tabs .nav-link {
+    font-weight: 900;
+    font-size: 22px;
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #4E5B61;
+    background: #fff !important;
+    border: none;
+    border-bottom: 3px solid #eee;
+}
+
+.featured .nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 3px solid #dc4f72;
+    color: #dc4f72;
+}
+
+.featured .tab-content img {
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.featured .tab-content img:hover {
+    transform: translateY(-0.5rem);
+    transition: 0.3s ease-in-out;
+}
+
+.ready-to-build h1 {
+    color: #2C3038;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.dark .about-our-company {
+    background-color: black !important;
+    color: #fff !important;
+}
+
+.dark .about-stat .about-stat-box {
+    background-color: #000;
+}
